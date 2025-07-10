@@ -1,0 +1,106 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #e0e0e0;
+}
+
+.container {
+    background: #2d2d2d;
+    padding: 30px;
+    border-radius: 5px;
+    border: 2px solid #5a5a5a;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.enigma-logo {
+    background-color: #8b0000;
+    height: 20px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+h1 {
+    text-align: center;
+    color: #c0c0c0;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.rotor-settings {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.rotor {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+.german-select, .german-textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #3a3a3a;
+    border: 1px solid #5a5a5a;
+    border-radius: 3px;
+    color: #e0e0e0;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}
+
+.german-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23a0a0a0'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.german-textarea {
+    height: 120px;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+.german-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to bottom, #8b0000, #6b0000);
+    color: #f0f0f0;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    border: 1px solid #5a0000;
+}
+
+.german-button:hover {
+    background: linear-gradient(to bottom, #9b0000, #7b0000);
+    box-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
+}
+
+#result {
+    font-weight: bold;
+    letter-spacing: 1px;
+}

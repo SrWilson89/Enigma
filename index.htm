@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina Enigma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="enigma-logo"></div>
+        <h1>MÁQUINA ENIGMA</h1>
+        
+        <div class="rotor-settings">
+            <div class="rotor">
+                <label for="rotor1">ROTOR 1:</label>
+                <select id="rotor1" class="german-select">
+                    <option value="I">I (EKMFLGDQVZNTOWYHXUSPAIBRCJ)</option>
+                    <option value="II">II (AJDKSIRUXBLHWTMCQGZNPYFVOE)</option>
+                    <option value="III">III (BDFHJLCPRTXVZNYEIWGAKMUSQO)</option>
+                </select>
+            </div>
+            
+            <div class="rotor">
+                <label for="rotor2">ROTOR 2:</label>
+                <select id="rotor2" class="german-select">
+                    <option value="I">I (EKMFLGDQVZNTOWYHXUSPAIBRCJ)</option>
+                    <option value="II">II (AJDKSIRUXBLHWTMCQGZNPYFVOE)</option>
+                    <option value="III">III (BDFHJLCPRTXVZNYEIWGAKMUSQO)</option>
+                </select>
+            </div>
+            
+            <div class="rotor">
+                <label for="rotor3">ROTOR 3:</label>
+                <select id="rotor3" class="german-select">
+                    <option value="I">I (EKMFLGDQVZNTOWYHXUSPAIBRCJ)</option>
+                    <option value="II">II (AJDKSIRUXBLHWTMCQGZNPYFVOE)</option>
+                    <option value="III">III (BDFHJLCPRTXVZNYEIWGAKMUSQO)</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="input-group">
+            <label for="text">MENSAJE:</label>
+            <textarea id="text" class="german-textarea" placeholder="Escribe tu mensaje..."></textarea>
+        </div>
+        
+        <div class="buttons">
+            <button id="encrypt" class="german-button">CIFRAR/DESCIFRAR</button>
+        </div>
+        
+        <div class="input-group">
+            <label for="result">RESULTADO:</label>
+            <textarea id="result" class="german-textarea" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
